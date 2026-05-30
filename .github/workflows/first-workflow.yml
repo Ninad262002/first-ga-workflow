@@ -1,0 +1,15 @@
+name: my first github workflow
+on: push
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v6
+            - name: welcome messages
+              run: echo "Hellow world"
+            - name: to list files
+              run: ls
+            - name: to read ReadMe.md
+              run: cat README.md
