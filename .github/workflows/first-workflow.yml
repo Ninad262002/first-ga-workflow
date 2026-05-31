@@ -7,9 +7,10 @@ jobs:
         steps:
             - name: Checkout repo
               uses: actions/checkout@v6
-            - name: welcome messages
-              run: echo "Hellow world"
-            - name: to list files
-              run: ls
-            - name: to read ReadMe.md
-              run: cat README.md
+            - name: Running multiple command in single steps
+              run: |
+                echo "Run Multople command"
+                ls
+                cat README.md
+            - name: Run cowsay command
+              run: cowsay -f dragon "Run for cover, I am a dragon ...rawr" >> dragon.txt
