@@ -9,5 +9,8 @@ jobs:
             - name: list all files
               run: ls -ltra
             - name: Executing shell script
-              run: sudo ./ascii-script.sh
+              run: |
+               chmod +x ascii-script.sh                 
+               ./ascii-script.sh
+
 
