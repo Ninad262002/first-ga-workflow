@@ -12,5 +12,3 @@ jobs:
                 echo "Run Multople command"
                 ls
                 cat README.md
-            - name: Run cowsay command
-              run: cowsay -f dragon "Run for cover, I am a dragon ...rawr" >> dragon.txt
